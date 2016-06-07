@@ -278,3 +278,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+add_filter('show_admin_bar', '__return_false');
