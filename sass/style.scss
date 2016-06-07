@@ -25,22 +25,61 @@ img {
 
 body {
 	color: #333;
+	font-family: 'Poppins', sans-serif;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
+// .container {
+// 	max-width: 1200px;
+// 	margin: 0 auto;
+// }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
-}
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
 
 .full {
 	width: 100%;
 }
+.hero {
+	border: 1px solid black;
+	padding: 15px 30px;
+	.box-container {
+		border: 1px solid grey;
+		height: 681px;
+		max-width: 1170px;
+		margin: 124px auto 0;
+		position: relative;	
+	}
+}
+.box-1 {
+	background: grey;
+	height: 75%;
+	width: 75%;
+
+}
+.box-2 {
+	background: white;
+	border: 1px solid black;
+	height: 660px;
+	position: absolute;
+	top: -140px;
+	left: -468px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-3 {
+	background: black;
+	height: 680px;
+	width: 60%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
 
 
 

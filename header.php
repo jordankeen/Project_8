@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+  <nav>
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
@@ -25,6 +25,6 @@
       'container' => false,
       'theme_location' => 'primary'
     )); ?>
-  </div> <!-- /.container -->
+  </nav> 
 </header><!--/.header-->
 
