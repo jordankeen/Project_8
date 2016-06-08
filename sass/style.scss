@@ -7,6 +7,8 @@
 * Author URI: http://hackeryou.com
 */
 
+$black: #100F14;
+
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
@@ -43,7 +45,7 @@ body {
 	width: 100%;
 }
 .hero {
-	padding: 35px 30px;
+	padding: 23px 30px 40px;
 	.box-container {
 		height: 715px;
 		max-width: 1090px;
@@ -85,22 +87,103 @@ body {
 	z-index: -1;
 }
 .page-heading {
-	background: black;
 	position: absolute;
 	width: 493px;
-	top: 43px;
+	top: 0;
 	left: 323px;
 	z-index: 10;
 	h1 {
 		color: white;
-		font-size: 106px;
-		letter-spacing: 15px;
+		font-size: 103px;
+		letter-spacing: 18px;
 		font-weight: 600;
-		line-height: 0.9;
+		line-height: 1.0;
 		margin: 0 auto;
-		background: black;
-		padding: 40px;
+		background: $black;
+		padding: 37px;
 	}
+}
+.about {
+	// border: 1px solid black;
+	width: 100%;
+	padding: 50px;
+	.about-container {
+		margin: 0 auto;
+		max-width: 950px;
+		display: flex;
+		justify-content: space-between;
+		padding: 25px 30px 25px;
+	}
+}
+.about-content {
+	// border: 1px solid black;
+	width: 48%;
+	border-bottom: 9px solid $black;
+	margin-bottom: 25px;
+	padding: 0 30px 30px 0;
+	h3 {
+		letter-spacing: 3px;
+		border: 3px solid $black;
+		display: inline-block;
+		padding: 10px;
+		margin-bottom: 40px;
+	}
+	p {
+		line-height: 1.4;
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+}
+.about-image-container {
+	width: 30%;
+	align-self: flex-end;
+	img {
+		width: 100%;
+		box-shadow: 20px 20px 0 $black;
+	}
+}
+.portfolio {
+	border: 1px solid grey;
+	padding: 50px 20px;
+}
+.portfolio-item-container {
+	border: 1px solid grey;
+	max-width: 950px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 20px;
+	.portfolio-image {
+		width: 60%;
+		img {
+			width: 100%;
+		}
+	}
+}
+.portfolio-content {
+	border: 1px solid black;
+	width: 40%;
+	h3 {
+		letter-spacing: 2px;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 0;
+	}
+	li {
+		list-style-type: none;
+	}
+}
+.portfolio .portfolio-item-container:nth-child(even) {
+	flex-direction: row-reverse;
 }
 
 

@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>&copy; 2016 blah footer <?php echo date('Y'); ?></p>
+    <p>Copyright &copy; <?php echo date('Y'); ?> Designed and Developed by Jordan Keen</p>
   </div>
 </footer>
 
