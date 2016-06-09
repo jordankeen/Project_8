@@ -21,28 +21,31 @@ Default Styling
 ====================================
 */
 
-img {
-	max-width: 100%;
-}
-
 body {
 	color: #333;
 	font-family: 'Poppins', sans-serif;
 }
-
-// .container {
-// 	max-width: 1200px;
-// 	margin: 0 auto;
-// }
-
-// .content {
-// 	float: left;
-// 	width: 65%;
-// 	margin-right: 5%;
-// }
-
-.full {
-	width: 100%;
+h3 {
+	letter-spacing: 3px;
+	border: 3px solid $black;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+h4 {
+	margin: 0 0 7px;
+	color: white;
+	font-size: 23px;
+	font-weight: 100;
+	background: #74d4e5;
+	display: inline-block;
+	padding: 7px 11px;
+	box-shadow: -10px -10px $black;
+	text-transform: uppercase;
+}
+.title-wrapper {
+	max-width: 950px;
+	margin:0 auto;
 }
 .hero {
 	padding: 23px 30px 40px;
@@ -103,31 +106,25 @@ body {
 		padding: 37px;
 	}
 }
+// About CSS
 .about {
 	// border: 1px solid black;
 	width: 100%;
-	padding: 50px;
+	padding: 70px 20px;
+	border:1px solid black;
 	.about-container {
 		margin: 0 auto;
 		max-width: 950px;
 		display: flex;
 		justify-content: space-between;
-		padding: 25px 30px 25px;
 	}
 }
 .about-content {
 	// border: 1px solid black;
 	width: 48%;
 	border-bottom: 9px solid $black;
-	margin-bottom: 25px;
+	max-height: 330px;
 	padding: 0 30px 30px 0;
-	h3 {
-		letter-spacing: 3px;
-		border: 3px solid $black;
-		display: inline-block;
-		padding: 10px;
-		margin-bottom: 40px;
-	}
 	p {
 		line-height: 1.4;
 		font-size: 13px;
@@ -137,55 +134,167 @@ body {
 .about-image-container {
 	width: 30%;
 	align-self: flex-end;
+	margin-top: 80px;
 	img {
 		width: 100%;
 		box-shadow: 20px 20px 0 $black;
 	}
 }
+// Portfolio CSS
 .portfolio {
-	border: 1px solid grey;
-	padding: 50px 20px;
+	padding: 70px 20px;
+	border: 1px solid black;
 }
 .portfolio-item-container {
-	border: 1px solid grey;
 	max-width: 950px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 0 auto;
-	padding: 20px;
+	margin: 50px auto 130px;
 	.portfolio-image {
-		width: 60%;
+		width: 50%;
 		img {
 			width: 100%;
+			display: block;
 		}
 	}
 }
 .portfolio-content {
-	border: 1px solid black;
-	width: 40%;
-	h3 {
-		letter-spacing: 2px;
-		margin: 0;
-		text-transform: uppercase;
+	width: 35%;
+	// padding: 50px 0 0;
+	h4 {
+		margin-left: 10px;
 	}
 	p {
 		font-size: 13px;
 		letter-spacing: 1px;
+		margin: 15px 0;
 	}
 	ul {
 		display: flex;
 		flex-wrap: wrap;
 		padding-left: 0;
+		margin: 20px 0;
 	}
 	li {
 		list-style-type: none;
+		background: $black;
+		color: white;
+		margin: 4px;
+		padding: 7px;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	li:last-child {
+		margin-right: 0;
 	}
 }
-.portfolio .portfolio-item-container:nth-child(even) {
-	flex-direction: row-reverse;
+.view-live {
+	background-color: white;
+	border: 2px solid black;
+	padding: 4px 8px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	a {
+		color: black;
+		&:hover {
+			color: black;
+		}
+	}
 }
-
+.portfolio-wrapper .portfolio-item-container:nth-child(odd) {
+	flex-direction: row-reverse;
+	.portfolio-content {
+		text-align: right;
+		ul {
+			justify-content: flex-end;
+		}
+		h4 {
+			box-shadow: 10px -10px $black;
+			margin-right: 10px;
+		}
+	}
+}
+// Skills CSS
+.skills {
+	width: 100%;
+	padding: 70px 20px;
+	border: 1px solid black;
+	.skill-container {
+		max-width: 546px;
+		margin: 0 auto 67px;
+		padding: 5px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.skill-item {
+	text-align: center;
+	padding: 10px;
+	margin-right: 10px;
+}
+.sass-margin {
+	margin-left: 14px;
+}
+.php-margin {
+	margin-left: 31px;
+}
+.devicons {
+	font-size: 65px;
+	color: #1B1A1A;
+}
+// Contact CSS
+.contact {
+	width: 100%;
+	padding: 70px 20px;
+	border: 1px solid black;
+	.form-wrapper {
+		max-width: 950px;
+		margin: 0 auto;
+	}
+}
+.contact-info {
+	max-width: 300px;
+	margin: 0 auto;
+	p {
+		font-size: 13px;
+	}
+}
+.wpcf7-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 530px;
+	padding: 20px;
+	margin: 0 auto;
+	p {
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+		height: 180px;
+		border: none;
+		border: 2px solid $black;
+		outline: transparent;
+	}
+	input[type="text"], 
+	input[type="email"] {
+		width: 100%;
+		border: none;
+		border: 2px solid $black;
+		outline: transparent;
+	}
+	p:nth-child(even) {
+		margin: 10px 0;
+	}
+	input[type="submit"] {
+		background: $black;
+		color: white;
+		outline: transparent;
+		border: none;
+		padding: 5px 8px;
+	}
+}
 
 
 

@@ -13,7 +13,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header id="home">
   <nav>
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
