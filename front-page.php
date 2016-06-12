@@ -25,20 +25,52 @@
 
 		</div>
 	</section>
+
+	<!-- <section class="hero2"> -->
+
+		<div class="hero2-container" style="background-image: url(<?php $image = get_field('box_3_image'); ?>
+					<?php echo $image['url']?>
+
+					)">
+			
+			<h1>front-end web developer.</h1>
+
+		</div>
+
+	<!-- </section> -->
 	<!-- About Section -->
 	<section class="about" id="about">
+		
+			<div class="title-wrapper">
+				<h3><?php echo get_field('about_title'); ?></h3>
+			</div>
+
 		<div class="about-container">
 
 			<div class="about-content">
-				<h3><?php echo get_field('about_title'); ?></h3>
 
 				<p><?php echo get_field('about_paragraph'); ?></p>
+
+				<ul>
+					<li>Get in touch:</li>
+					<li>
+						<a target="_blank" href="https://ca.linkedin.com/in/jordankeen"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a target="_blank" href="https://twitter.com/Eli_Roken"><i class="fa fa-twitter" aria-hidden="true"></i></a></i>
+					</li>
+					<li>
+						<a href="mailto:hello@jordankeen.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></i>
+					</li>
+				</ul>
 			</div>
 
 			<div class="about-image-container">
 				<?php $image = get_field('about_image'); ?>
 				<img class="accent" src="<?php echo $image['url']?>">
 			</div>
+
+
 
 		</div>
 	</section>
@@ -47,6 +79,7 @@
 		<div class="title-wrapper">
 			<h3>work</h3>					
 		</div>
+
 
 		<div class="portfolio-wrapper">
 	 	<?php 
@@ -66,7 +99,6 @@
 
 					<div class="portfolio-content">
 						<h4><?php the_title() ?></h4>
-						<p><?php the_field('item_name'); ?></p>
 						<p><?php the_field('short_description'); ?></p>
 						<p><?php the_field('long_description'); ?></p>
 
@@ -80,7 +112,7 @@
 							?>
 						</ul>
 
-						<button class="view-live">
+						<button class="view-live hvr-sweep-to-right">
 							<a href="<?php the_field('portfolio_link'); ?>">View Live</a>
 						</button>
 					</div>
@@ -123,9 +155,9 @@
 						<span class="devicons devicons-wordpress"></span>
 						<p>WORDPRESS</p>
 					</div>
-					<div class="skill-item">
-						<span class="devicons devicons-javascript_badge"></span>
-						<p>JAVASCRIPT</p>
+					<div class="skill-item php-margin">
+						<span class="devicons devicons-php"></span>
+						<p>PHP</p>
 					</div>
 					<div class="skill-item">
 						<span class="devicons devicons-git"></span>
@@ -143,9 +175,9 @@
 						<span class="devicons devicons-sass"></span>
 						<p>SASS</p>
 					</div>
-					<div class="skill-item php-margin">
-						<span class="devicons devicons-php"></span>
-						<p>PHP</p>
+					<div class="skill-item">
+						<span class="devicons devicons-javascript_badge"></span>
+						<p>JAVASCRIPT</p>
 					</div>
 							
 				</div>
@@ -160,7 +192,7 @@
 			<div class="form-wrapper">
 
 				<div class="contact-info">
-					<p>Message me at HELLO[AT]JORDANKEEN.COM</p>
+					<p>Message me at <a href="mailto:hello@jordankeen.com">HELLO[AT]JORDANKEEN.COM</a></p>
 					<p>or through the form below.</p>
 				</div>			
 

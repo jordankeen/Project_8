@@ -4,6 +4,9 @@ a {
 	&:hover {
 		color: grey;
 	}
+	&:focus {
+		outline: transparent;
+	}
 }
 
 /* paragraphs */

@@ -9,17 +9,22 @@ nav {
 	align-items: center;
 	max-width: 1090px;
 	margin: 0 auto;
-	h1 a {
+	.logo {
 		font-size: 20px;
 		font-weight: 400;
-		background: black;
+		background: $black;
 		color: white;
-		padding: 5px 8px;
+		padding: 4px 10px;
 		letter-spacing: 6px;
+		margin: 22px 0;
+		z-index: 14;
+		&:hover {
+			color: white;
+		}
 
 	}
 }
-
+// Top Nav Menu CSS
 ul.menu {
 	margin: 0;
 	padding: 0;
@@ -34,9 +39,26 @@ ul.menu {
 			font-size: 10px;
 			font-weight: 700;
 			letter-spacing: 2px;
+			background: white;
+			transition: all 0.4s;
+			&:hover {
+				color: white;
+				background: $black;
+			}
 		}
 	}
 	li:last-child {
 		margin-right: 0;
 	}
+}
+// .menu {
+// 	display: none;
+// 	color: $black;
+// 	cursor: pointer;
+// 	i {
+// 		font-size: 25px;
+// 	}
+// }
+.nav {
+	display: none;
 }

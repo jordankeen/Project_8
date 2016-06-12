@@ -1,11 +1,32 @@
 footer {
 	background: black;
-	padding: 20px 35px;
+	padding: 8px 35px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
 	p {
 		margin: 0;
 		color: white;
 		text-align: center;
 		font-weight: 100;
 		font-size: 12px;
+	}
+	ul {
+	padding-left: 0;
+	}
+	li {
+		list-style-type: none;
+		display: inline;
+		margin-right: 5px;
+	}
+	a {
+		color: white;
+		transition: color 0.4s;
+		&:focus {
+			outline: transparent;
+		}
+		&:hover {
+			color: lightgrey;
+		}
 	}
 }

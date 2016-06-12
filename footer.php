@@ -1,7 +1,21 @@
 <footer>
+
+	<ul>
+		<li>
+			<a target="_blank" href="https://ca.linkedin.com/in/jordankeen"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		</li>
+		<li>
+			<a target="_blank" href="https://twitter.com/Eli_Roken"><i class="fa fa-twitter" aria-hidden="true"></i></a></i>
+		</li>
+		<li>
+			<a href="mailto:hello@jordankeen.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></i>
+		</li>
+	</ul>
+
   <div class="container">
     <p>Copyright &copy; <?php echo date('Y'); ?> Designed and Developed by Jordan Keen</p>
   </div>
+  
 </footer>
 
 <script>
