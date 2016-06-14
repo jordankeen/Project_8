@@ -5,7 +5,6 @@
 		<div class="box-container">
 
 			<div class="page-heading">
-				<!-- <h1>front-end web developer.</h1> -->
 			</div>
 
 			<div class="top-title">
@@ -117,8 +116,10 @@
 					</div>
 
 					<div class="portfolio-image">
-						<?php $image = get_field('portfolio_image'); ?>
-						<img src="<?php echo $image['url']?>">
+						<a href="<?php the_field('portfolio_link'); ?>" target="_blank">
+							<?php $image = get_field('portfolio_image'); ?>
+							<img src="<?php echo $image['url']?>">
+						</a>
 					</div>
 
 				</article>

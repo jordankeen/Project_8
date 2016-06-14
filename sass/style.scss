@@ -147,11 +147,12 @@ h4 {
 	a {
 		color: $black;
 		transition: color 0.4s;
+		font-size: 18px;
 		&:focus {
 			outline: transparent;
 		}
 		&:hover {
-			color: lightgrey;
+			color: #74d5e7;
 		}
 	}
 }
@@ -217,8 +218,9 @@ h4 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: black;
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active, .hvr-sweep-to-right:visited {
+  color: white;
+  background: #74d5e7;
 }
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
@@ -274,6 +276,9 @@ h4 {
 	&:hover {
 		color: white;
 	}
+	&:visited {
+		background: #74d5e7;
+	}
 }
 // Skills CSS
 .skills {
@@ -307,10 +312,10 @@ h4 {
 	}
 }
 .contact-info {
-	max-width: 300px;
+	max-width: 331px;
 	margin: 0 auto;
 	p {
-		font-size: 13px;
+		font-size: 15px;
 	}
 }
 .wpcf7-form {
@@ -329,6 +334,10 @@ h4 {
 		border: none;
 		border: 2px solid $black;
 		outline: transparent;
+		transition: border 0.3s;
+		&:focus {
+			border: 2px solid #74d5e7;
+		}
 	}
 	input[type="text"], 
 	input[type="email"] {
@@ -336,12 +345,17 @@ h4 {
 		border: none;
 		border: 2px solid $black;
 		outline: transparent;
+		transition: border 0.3s;
+		padding: 3px;
+		&:focus {
+			border: 2px solid #74d5e7;
+		}
 	}
 	p:nth-child(even) {
 		margin: 10px 0;
 	}
 	input[type="submit"] {
-		background: $black;
+		background: #74d5e7;
 		color: white;
 		outline: transparent;
 		border: none;
@@ -349,7 +363,7 @@ h4 {
 		transition: all 0.3s;
 		text-transform: uppercase;
 		&:hover {
-			background: #74d5e7;
+			background: $black;
 			color: white;
 		}
 	}

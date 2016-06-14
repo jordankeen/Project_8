@@ -16,13 +16,13 @@
 
 <body <?php body_class(); ?>">
 
-<header id="home">
+  <header id="home"></header>
+
   <nav>
-    <!-- <h1> -->
+
       <a class="logo" href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
       </a>
-    <!-- </h1> -->
 
     <?php wp_nav_menu( array(
       'container' => false,
@@ -39,5 +39,5 @@
 
 
   </nav> 
-</header><!--/.header-->
+
 

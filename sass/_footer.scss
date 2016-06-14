@@ -22,11 +22,12 @@ footer {
 	a {
 		color: white;
 		transition: color 0.4s;
+		font-size: 18px;
 		&:focus {
 			outline: transparent;
 		}
 		&:hover {
-			color: lightgrey;
+			color: #74d5e7;
 		}
 	}
 }
