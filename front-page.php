@@ -135,7 +135,7 @@
 		<section class="skills" id="skills">
 			
 			<div class="title-wrapper">
-				<h3>Skills</h3>
+				<h3>skills</h3>
 			</div>
 				<div class="skill-container">
 				
@@ -186,7 +186,7 @@
 		<section class="contact" id="contact">
 
 			<div class="title-wrapper">
-				<h3>Contact</h3>
+				<h3>contact</h3>
 			</div>
 
 			<div class="form-wrapper">
