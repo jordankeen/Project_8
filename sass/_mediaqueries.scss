@@ -116,6 +116,7 @@
 			.view-live {
 				width: 30%;
 				margin: 0 auto;
+				text-align: center;
 			}
 		}
 	}
@@ -153,6 +154,16 @@
 	.skill-item {
 		width: 25%;
 	}
+	.contact-info {
+		text-align: center;
+	}
+	footer {
+		padding: 15px;
+		flex-direction: column;
+		ul {
+			margin: 8px;
+		}
+	}
 }
 @media screen and (max-width: 480px) {
 	.about, .portfolio {
@@ -163,6 +174,20 @@
 		p, 
 		ul li:first-child {
 			font-size: 13px;
+		}
+	}
+	.portfolio-item-container {
+		.portfolio-content {
+			display: block;
+			h4 {
+				font-size: 21px;
+			}
+			p {
+				font-size: 12px;
+			}
+			li {
+				font-size: 10px;
+			}
 		}
 	}
 	.skills {

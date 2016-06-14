@@ -35,10 +35,8 @@ h3 {
 }
 h4 {
 	margin: 0 0 7px;
-	// color: white;
 	font-size: 23px;
 	font-weight: 100;
-	// background: #74d4e5;
 	display: inline-block;
 	padding: 7px 11px;
 	box-shadow: -10px -10px $black;
@@ -54,7 +52,7 @@ h4 {
 	padding: 0 12px;
 }
 .hero {
-	padding: 23px 0 40px;
+	padding: 23px 0 0;
 	.box-container {
 		height: 715px;
 		max-width: 1090px;
@@ -81,13 +79,11 @@ h4 {
 	position: absolute;
 	top: -140px;
 	left: 0;
-	// width: 60%;
 	width: 653px;
 	position: relative
 }
 .box-3 {
 	height: 715px;
-	// width: 60%;
 	width: 653px;
 	position: absolute;
 	bottom: 0;
@@ -100,36 +96,41 @@ h4 {
 	top: -82px;
 	left: 323px;
 	z-index: 10;
+	background: black;
+	height: 564px;
+}
+.top-title {
+	position: absolute;
+	z-index: 12;
+	top: 5px;
+	left: 363px;
 	h1 {
-		color: white;
-		font-size: 103px;
-		letter-spacing: 18px;
+		max-width: 360px;
 		font-weight: 600;
-		line-height: 1.0;
+		line-height: 1;
+		letter-spacing: 18px;
+		font-size: 103px;
 		margin: 0 auto;
-		background: $black;
-		padding: 71px 37px;
-		height: 564px;
+		color: white;
 	}
+}
+.block {
+	display: block;
 }
 // About CSS
 .about {
-	// border: 1px solid black;
 	width: 100%;
 	padding: 50px 60px;
-	// border:1px solid black;
 	.about-container {
 		margin: 0 auto;
-		max-width: 900px;
+		max-width: 1000px;
 		display: flex;
 		justify-content: space-between;
 	}
 }
 .about-content {
-	// border: 1px solid black;
 	width: 48%;
 	max-height: 330px;
-	// padding: 0 30px 30px 0;
 	p {
 		line-height: 1.4;
 		font-size: 15px;
@@ -156,7 +157,6 @@ h4 {
 }
 .about-image-container {
 	width: 30%;
-	// align-self: flex-end;
 	img {
 		width: 100%;
 		box-shadow: 20px 20px 0 $black;
@@ -165,10 +165,9 @@ h4 {
 // Portfolio CSS
 .portfolio {
 	padding: 50px 40px;
-	// border: 1px solid black;
 }
 .portfolio-item-container {
-	max-width: 900px;
+	max-width: 1000px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -271,28 +270,11 @@ h4 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	transition: all 0.3s;
-	a {
+	color: white;
+	&:hover {
 		color: white;
-		&:hover {
-			color: white;
-		}
 	}
 }
-// .portfolio-wrapper .portfolio-item-container {
-// 	flex-direction: row-reverse;
-// 	.portfolio-content {
-// 		text-align: right;
-// 		ul {
-// 			justify-content: flex-end;
-// 		}
-// 		h4 {
-// 			box-shadow: 10px -10px $black;
-// 			margin-right: 10px;
-// 		}
-// 	}
-// }
-
-
 // Skills CSS
 .skills {
 	width: 100%;

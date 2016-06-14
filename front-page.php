@@ -5,7 +5,11 @@
 		<div class="box-container">
 
 			<div class="page-heading">
-				<h1>front-end web developer.</h1>
+				<!-- <h1>front-end web developer.</h1> -->
+			</div>
+
+			<div class="top-title">
+				<h1><span class="block">front-</span><span class="block">end</span><span class="block">web</span><span class="block">developer.</span></h1>
 			</div>
 
 			<div class="box-2">
@@ -26,18 +30,13 @@
 		</div>
 	</section>
 
-	<!-- <section class="hero2"> -->
+	<section class="hero2">
 
-		<div class="hero2-container" style="background-image: url(<?php $image = get_field('box_3_image'); ?>
-					<?php echo $image['url']?>
-
-					)">
-			
+		<div class="hero2-container" style="background-image: url(<?php $image = get_field('box_3_image'); ?><?php echo $image['url']?>)">
 			<h1>front-end web developer.</h1>
-
 		</div>
 
-	<!-- </section> -->
+	</section>
 	<!-- About Section -->
 	<section class="about" id="about">
 		
@@ -112,9 +111,9 @@
 							?>
 						</ul>
 
-						<button class="view-live hvr-sweep-to-right">
-							<a href="<?php the_field('portfolio_link'); ?>">View Live</a>
-						</button>
+						
+							<a class="view-live hvr-sweep-to-right" target="_blank" href="<?php the_field('portfolio_link'); ?>">View Live</a>
+						
 					</div>
 
 					<div class="portfolio-image">
