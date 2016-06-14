@@ -58,6 +58,9 @@
 						<a target="_blank" href="https://twitter.com/Eli_Roken"><i class="fa fa-twitter" aria-hidden="true"></i></a></i>
 					</li>
 					<li>
+						<a target="_blank" href="https://github.com/jordankeen"><i class="fa fa-github" aria-hidden="true"></i></a></i>
+					</li>
+					<li>
 						<a href="mailto:hello@jordankeen.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></i>
 					</li>
 				</ul>
