@@ -96,7 +96,7 @@ h4 {
 	top: -82px;
 	left: 323px;
 	z-index: 10;
-	background: black;
+	background: $black;
 	height: 564px;
 }
 .top-title {
@@ -316,6 +316,9 @@ h4 {
 	margin: 0 auto;
 	p {
 		font-size: 15px;
+	}
+	a {
+		font-family: 'Poppins', sans-serif;
 	}
 }
 .wpcf7-form {

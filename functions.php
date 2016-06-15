@@ -48,8 +48,7 @@ function hackeryou_styles(){
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 	wp_enqueue_style('poppins', 'https://fonts.googleapis.com/css?family=Poppins:400,300,600,700');
 	wp_enqueue_style('devicons', 'https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css');
-	wp_enqueue_style('CutiveMono', 'https://fonts.googleapis.com/css?family=Cutive+Mono');
-
+	wp_enqueue_style('opensans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 }
 
