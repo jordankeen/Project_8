@@ -86,7 +86,7 @@
 	 	<?php 
 		$portfolio_rightArgs = array(
 			'post_type' => 'portfolio_right',
-			'posts_per_page' => 5,
+			'posts_per_page' => 8,
 			'meta_key' => 'order_number',
 			'orderby' => 'meta_value_num',
 			'order' => 'DESC'
@@ -183,6 +183,14 @@
 						<p>JAVASCRIPT</p>
 					</div>
 							
+				</div>
+
+				<div class="currentlyLearning">
+					<h6>Up Next: </h6>
+					<div class="skill-item">
+						<span class="devicons devicons-angular"></span>
+						<p>ANGULAR</p>
+					</div>
 				</div>
 		</section>
 

@@ -275,11 +275,11 @@ h4 {
 	padding: 50px 20px;
 	.skill-container {
 		max-width: 800px;
-		margin: 0 auto 67px;
+		margin: 0 auto 20px;
 		padding: 5px;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 }
 .skill-item {
@@ -290,6 +290,22 @@ h4 {
 .devicons {
 	font-size: 65px;
 	color: #1B1A1A;
+}
+.currentlyLearning {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 800px;
+	align-items: center;
+	margin: 0 auto;
+	span {
+		font-size: 50px;
+	}
+	h6 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 12px;
+	}
 }
 // Contact CSS
 .contact {
