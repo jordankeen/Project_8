@@ -171,6 +171,9 @@ h4 {
 		}
 	}
 }
+.portfolio-item-container:last-child {
+	margin-bottom: 0;
+}
 /* hover effect credit: ianlunn.github.io/hover/  */
 .hvr-sweep-to-right {
   display: inline-block;
